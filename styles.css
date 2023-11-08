@@ -60,18 +60,48 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 2fr;
+    padding: 20px 30px;
+    gap: 30px;
 }
 
-.search_bar img, .top_right img {
+.search_bar img, #bell {
     height: 1em;
     margin-right: 5px;
 }
 
+#cat {
+    height: 2em;
+    border-radius: 50%;
+}
+
+.welcome img {
+    height: 5em;
+    border-radius: 50%;
+}
+
 .search_bar button {
     width: 90%;
+    height: 70%;
     background-color: rgb(216, 216, 216);
     border-radius: 8px;
     border: none;
+}
+
+.top_right, .welcome {
+    font-weight: bold;
+}
+
+.top_right {
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 .header_buttons {
@@ -88,8 +118,16 @@
 
 .content {
     background-color: rgb(216, 216, 216);
+    display: grid;
+    grid-template-columns: 3fr 3fr 2fr;
+    grid-template-rows: repeat(11, 1fr);
+    height: 100vh;
 }
 
 ul {
     list-style-type: none;
+}
+
+.project_text {
+    grid-area: 1 / 1/ 3 / 2;
 }
